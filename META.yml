@@ -8,7 +8,7 @@ build_requires:
 configure_requires:
   ExtUtils::MakeMaker: 6.42
 distribution_type: module
-generated_by: 'Module::Install version 0.91'
+generated_by: 'Module::Install version 0.95'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -20,11 +20,11 @@ no_index:
     - t
 requires:
   Padre: 0.49
-  Perl::APIReference: 0.03
+  Perl::APIReference: 0.04
   perl: 5.8.0
 resources:
   bugtracker: http://padre.perlide.org/
   homepage: http://padre.perlide.org/
   license: http://dev.perl.org/licenses/
   repository: http://svn.perlide.org/padre/trunk/Padre-Plugin-XS
-version: 0.01
+version: 0.02
