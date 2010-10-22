@@ -1,16 +1,12 @@
 package Padre::Plugin::XS::Document;
-BEGIN {
-  $Padre::Plugin::XS::Document::VERSION = '0.04';
-}
-
-# ABSTRACT: Padre XS Document
 
 use 5.008;
 use strict;
 use warnings;
 use Padre::Document ();
 
-our @ISA = 'Padre::Document';
+our $VERSION = '0.03';
+our @ISA     = 'Padre::Document';
 
 # TODO better highlighting. Can vim do better? Can we steal? Add an STC highlighter? ...
 
@@ -71,42 +67,10 @@ sub _load_perlapi_keywords {
 	return;
 }
 
+
 1;
 
-
-
-=pod
-
-=head1 NAME
-
-Padre::Plugin::XS::Document - Padre XS Document
-
-=head1 VERSION
-
-version 0.04
-
-=head1 AUTHORS
-
-=over 4
-
-=item *
-
-Steffen Mueller <smueller@cpan.org>
-
-=item *
-
-Ahmad M. Zawawi <ahmad.zawawi@gmail.com>
-
-=back
-
-=head1 COPYRIGHT AND LICENSE
-
-This software is copyright (c) 2010 by Steffen Mueller.
-
-This is free software; you can redistribute it and/or modify it under
-the same terms as the Perl 5 programming language system itself.
-
-=cut
-
-
-__END__
+# Copyright 2008-2009 The Padre development team as listed in Padre.pm.
+# LICENSE
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl 5 itself.

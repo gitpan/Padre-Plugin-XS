@@ -1,19 +1,40 @@
 package Padre::Plugin::XS;
-BEGIN {
-  $Padre::Plugin::XS::VERSION = '0.04';
-}
-
-# ABSTRACT: Padre support for perl XS (and perlapi)
-
 use strict;
 use warnings;
 use 5.008;
+
+our $VERSION = '0.03';
 
 use Padre::Wx ();
 use Padre::Current;
 
 use base 'Padre::Plugin';
 
+=head1 NAME
+
+Padre::Plugin::XS - Padre support for perl XS (and perlapi)
+
+=head1 SYNOPSIS
+
+This plugin is intended to extend Padre's support for editing XS
+and C-using-perlapi.
+
+Currently the plugin implements limited syntax highlighting and
+calltips using a configurable version of the perlapi. After installing
+this plugin, you can enable XS calltips in the C<View> menu of Padre
+and enjoy the full perlapi of various releases of perl while writing
+XS code. You can configure the version of perlapi you write against in
+the padre.yml of your project (key C<xs_calltips_perlapi_version>).
+By default, the newest available perlapi will be used.
+
+Once this plug-in is installed the user can switch the highlighting of
+XS files to use the highlighter via the Preferences menu of L<Padre>.
+The default XS syntax highlighting of Padre is abysmal. You're very
+encouraged to enable the C<XS highlighter> feature.
+
+This is an early release.
+
+=cut
 
 sub load_modules {
 	require Perl::APIReference;
@@ -149,44 +170,20 @@ sub about {
 	my $about = Wx::AboutDialogInfo->new;
 	$about->SetName(__PACKAGE__);
 	$about->SetDescription( Wx::gettext('Padre XS and perlapi support') );
-	$about->SetVersion($Padre::Plugin::XS::VERSION);
+	$about->SetVersion($VERSION);
 	Wx::AboutBox($about);
 	return;
 }
 
+
 1;
 
+# Copyright 2009-2010 Steffen Mueller.
+# LICENSE
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl 5 itself.
 
-
-=pod
-
-=head1 NAME
-
-Padre::Plugin::XS - Padre support for perl XS (and perlapi)
-
-=head1 VERSION
-
-version 0.04
-
-=head1 SYNOPSIS
-
-This plugin is intended to extend Padre's support for editing XS
-and C-using-perlapi.
-
-Currently the plugin implements limited syntax highlighting and
-calltips using a configurable version of the perlapi. After installing
-this plugin, you can enable XS calltips in the C<View> menu of Padre
-and enjoy the full perlapi of various releases of perl while writing
-XS code. You can configure the version of perlapi you write against in
-the padre.yml of your project (key C<xs_calltips_perlapi_version>).
-By default, the newest available perlapi will be used.
-
-Once this plug-in is installed the user can switch the highlighting of
-XS files to use the highlighter via the Preferences menu of L<Padre>.
-The default XS syntax highlighting of Padre is abysmal. You're very
-encouraged to enable the C<XS highlighter> feature.
-
-This is an early release.
+__END__
 
 =head1 ACKNOWLEDGMENTS
 
@@ -194,29 +191,16 @@ Many thanks to Gabor Szabo, who wrote the Kate plugin upon this is based.
 I'm grateful to Herbert Breunung for writing Kephra and getting STC syntax highlighting more
 right that us. Looking at his code has helped me write this.
 
-=head1 AUTHORS
+=head1 AUTHOR
 
-=over 4
-
-=item *
-
-Steffen Mueller <smueller@cpan.org>
-
-=item *
-
-Ahmad M. Zawawi <ahmad.zawawi@gmail.com>
-
-=back
+Steffen Mueller, C<smueller@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2010 by Steffen Mueller.
+Copyright 2009-2010 Steffen Mueller
 
-This is free software; you can redistribute it and/or modify it under
-the same terms as the Perl 5 programming language system itself.
+This program is free software; you can redistribute it and/or
+modify it under the same terms as Perl 5 itself.
 
 =cut
-
-
-__END__
 

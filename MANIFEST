@@ -1,4 +1,14 @@
+Build.PL
 Changes
+LICENSE
+MANIFEST
+META.json
+META.yml
+README
+blib/lib/Padre/Plugin/XS.pm
+blib/lib/Padre/Plugin/XS/Document.pm
+blib/man3/Padre::Plugin::XS.3pm
+dist.ini
 inc/Module/Install.pm
 inc/Module/Install/Base.pm
 inc/Module/Install/Can.pm
@@ -11,9 +21,8 @@ inc/Module/Install/Win32.pm
 inc/Module/Install/WriteAll.pm
 lib/Padre/Plugin/XS.pm
 lib/Padre/Plugin/XS/Document.pm
-Makefile.PL
-MANIFEST			This list of files
-META.yml
-share/locale/messages.pot
-share/locale/Padre__Plugin__XS-ar.po
+share/locale/Padre__Plugin__XS-ar.mo
+t/00-compile.t
 t/00-load.t
+t/release-check-changes.t
+t/release-pod-syntax.t
