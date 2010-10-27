@@ -1,6 +1,6 @@
 package Padre::Plugin::XS::Document;
 BEGIN {
-  $Padre::Plugin::XS::Document::VERSION = '0.05';
+  $Padre::Plugin::XS::Document::VERSION = '0.06';
 }
 
 # ABSTRACT: Padre XS Document
@@ -83,7 +83,7 @@ Padre::Plugin::XS::Document - Padre XS Document
 
 =head1 VERSION
 
-version 0.05
+version 0.06
 
 =head1 AUTHORS
 

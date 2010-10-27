@@ -10,6 +10,5 @@ lib/Padre/Plugin/XS.pm
 lib/Padre/Plugin/XS/Document.pm
 share/locale/Padre__Plugin__XS-ar.mo
 t/00-compile.t
-t/00-load.t
 t/release-check-changes.t
 t/release-pod-syntax.t

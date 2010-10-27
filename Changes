@@ -1,9 +1,10 @@
 This is the change log for the Padre::Plugin::XS module:
 
-0.05   2010.10.22
+0.06   2010.10.27
+    t/00-load.t is magically injected by [@PadrePlugin] via [LoadTests] (AZAWAWI)
 
 0.05   2010.10.22
-    Re-uploaded 0.04 as 0.05 to satisfy the indexer
+    Re-uploaded 0.04 as 0.05 to satisfy the indexer (AZAWAWI)
 
 0.04   2010.10.22
     Switched to Dist::Zilla (AZAWAWI)
