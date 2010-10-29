@@ -1,6 +1,6 @@
 package Padre::Plugin::XS;
 BEGIN {
-  $Padre::Plugin::XS::VERSION = '0.07';
+  $Padre::Plugin::XS::VERSION = '0.08';
 }
 
 # ABSTRACT: Padre support for perl XS (and perlapi)
@@ -166,7 +166,7 @@ Padre::Plugin::XS - Padre support for perl XS (and perlapi)
 
 =head1 VERSION
 
-version 0.07
+version 0.08
 
 =head1 SYNOPSIS
 
