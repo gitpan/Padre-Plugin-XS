@@ -49,4 +49,4 @@ resources:
   homepage: http://padre.perlide.org/trac/wiki/PadrePluginXS
   license: http://dev.perl.org/licenses/
   repository: http://svn.perlide.org/padre/trunk/Padre-Plugin-XS
-version: 0.10
+version: 0.11

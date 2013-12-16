@@ -7,7 +7,7 @@ use strict;
 use Padre::Unload;
 use Try::Tiny;
 
-our $VERSION = '0.10';
+our $VERSION = '0.11';
 use parent qw(Padre::Plugin);
 
 # Child modules we need to unload when disabled
@@ -171,7 +171,7 @@ Padre::Plugin::XS - Padre support for perl XS (and perlapi)
 
 =head1 VERSION
 
-version: 0.10
+version: 0.11
 
 =head1 DESCRIPTION
 
@@ -179,6 +179,7 @@ This plugin is intended to extend Padre's support for editing XS
 and C-using-perlapi.
 
 =head1 SYNOPSIS
+
 Currently the plugin implements limited syntax highlighting and
 calltips using a configurable version of the perlapi. After installing
 this plugin, you can enable XS calltips in the C<View> menu of Padre
@@ -193,7 +194,9 @@ The default XS syntax highlighting of Padre is abysmal. You're very
 encouraged to enable the C<XS highlighter> feature.
 
 To use this Plugin you need to make sure B<editor_calltips> is enabled in
-Tools-Preferances-Advance
+Tools-Preferences-Advance
+
+Also see the L<wiki|http://padre.perlide.org/trac/wiki/PadrePluginXS> page.
 
 =head1 METHODS
 

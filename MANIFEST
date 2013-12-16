@@ -16,8 +16,6 @@ LICENSE
 Makefile.PL
 MANIFEST			This list of files
 META.yml
-MYMETA.json
-MYMETA.yml
 README
 share/locale/Padre__Plugin__XS-ar.mo
 share/locale/Padre__Plugin__XS-ar.po

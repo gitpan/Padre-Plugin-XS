@@ -6,7 +6,7 @@ use strict;
 
 use Padre::Current;
 use Padre::Logger;
-our $VERSION = '0.10';
+our $VERSION = '0.11';
 use parent qw(Padre::Plugin);
 
 sub colorize {
@@ -115,7 +115,7 @@ Padre::Plugin::XS::PerlXS - previous code needs to be removed, but checked befor
 
 =head1 VERSION
 
-version: 0.10
+version: 0.11
 
 =head1 METHODS
 

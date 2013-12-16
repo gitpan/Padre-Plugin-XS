@@ -1,5 +1,8 @@
 This is the change log for the Padre::Plugin::XS module:
 
+0.11 2013-12-16
+ - Remove MYMETA and fox a typo (BOWTIE)
+
 0.10 2013-12-14
  - Added Dutch translation (ddn123456 - Dirk De Nijs)
  - Added Brazilian Portuguese translation (GARU)
